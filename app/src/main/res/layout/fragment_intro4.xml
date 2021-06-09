@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro_back_color"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zenlabs.z5x5.Fragment.Intro4Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro4_animator"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_above="@+id/textView21"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/intro_header_color"
+            android:gravity="center_horizontal"
+            android:id="@+id/relativeLayout4">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Book.ttf"
+                android:text="Track "
+                android:id="@+id/textView19"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Bold.ttf"
+                android:background="#87c440"
+                android:text=" Your Progress "
+                android:id="@+id/textView20"
+                android:layout_toRightOf="@+id/textView19"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="36dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/imageView4"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_header"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/intro_header_color"
+            android:id="@+id/relativeLayout2" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            font:customFont="Gotham-Light.ttf"
+            android:text="\nEasily keep track of your strength gains\nand hit those PRs! (Personal Records)"
+            android:id="@+id/textView21"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+    </RelativeLayout>
+</FrameLayout>

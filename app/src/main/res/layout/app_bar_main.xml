@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main_container"
+    tools:context="com.zenlabs.z5x5.Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:id="@+id/relativeLayout8">
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="5x5 Workout"
+            android:id="@+id/textView75"
+            android:layout_centerInParent="true"
+            font:customFont="Stratum2-Medium.otf"/>
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icon_menu"
+            android:id="@+id/btn_menu_toggle"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icon_note"
+            android:id="@+id/btn_note"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@color/intro_back_color"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="workout"
+            android:drawableTop="@drawable/icon_workout"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@xml/button_selector"
+            android:drawablePadding="4dp"
+            android:id="@+id/btn_tab_workout"
+            android:layout_weight="1"
+            android:padding="4dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="progress"
+            android:drawableTop="@drawable/icon_progress"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@xml/button_selector"
+            android:drawablePadding="4dp"
+            android:id="@+id/btn_tab_progress"
+            android:layout_weight="1"
+            android:padding="4dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="calendar"
+            android:drawableTop="@drawable/icon_calendar"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@xml/button_selector"
+            android:drawablePadding="4dp"
+            android:id="@+id/btn_tab_cal"
+            android:layout_weight="1"
+            android:padding="4dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="help"
+            android:drawableTop="@drawable/icon_help"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@xml/button_selector"
+            android:drawablePadding="4dp"
+            android:id="@+id/btn_tab_help"
+            android:layout_weight="1"
+            android:padding="4dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="more apps"
+            android:drawableTop="@drawable/icon_more_app"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@xml/button_selector"
+            android:drawablePadding="4dp"
+            android:id="@+id/btn_tab_more"
+            android:layout_weight="1"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout2">
+    </RelativeLayout>
+
+    <eightbitlab.com.blurview.BlurView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blur_background_view"
+        app:blurOverlayColor="#80000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="REST\n90 SECONDS"
+                android:lineSpacingExtra="8dp"
+                android:id="@+id/textView113"
+                font:customFont="Stratum2-Bold.otf"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/clock_progress_view"
+                android:layout_centerHorizontal="true" />
+
+            <com.zenlabs.z5x5.CustomView.TimerView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:id="@+id/clock_skin_view"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_centerInParent="true" />
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/clock_progress_view"
+                android:layout_alignTop="@+id/clock_skin_view"
+                android:layout_alignBottom="@+id/clock_skin_view"
+                android:padding="64dp"
+                CircleProgressView:cpv_value="10"
+                CircleProgressView:cpv_maxValue="60"
+                CircleProgressView:cpv_barColor="@android:color/white"
+                CircleProgressView:cpv_rimColor="@android:color/transparent"
+                CircleProgressView:cpv_textColor="@android:color/black"
+                CircleProgressView:cpv_unitColor="@android:color/black"
+                CircleProgressView:cpv_spinColor="@android:color/black"
+                CircleProgressView:cpv_barWidth="7dp"
+                CircleProgressView:cpv_rimWidth="7dp"
+                CircleProgressView:cpv_contourSize="0dp"
+                CircleProgressView:cpv_textSize="0sp"
+                CircleProgressView:cpv_seekMode="false"/>
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="00"
+                android:id="@+id/text_rest_seconds"
+                android:layout_toRightOf="@+id/textView115"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text=":"
+                android:id="@+id/textView115"
+                android:layout_centerInParent="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="00"
+                android:id="@+id/text_rest_min"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView115" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:id="@+id/btn_start_next_set"
+                android:background="@xml/stop_rest_button"
+                android:layout_below="@+id/clock_progress_view"
+                android:layout_centerHorizontal="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="CLICK HERE"
+                android:id="@+id/textView100"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/btn_start_next_set"
+                android:layout_marginTop="4dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="TO START YOUR NEXT SET"
+                android:id="@+id/textView116"
+                android:layout_alignBottom="@+id/btn_start_next_set"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp" />
+
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

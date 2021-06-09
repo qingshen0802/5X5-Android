@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.8"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CalendarFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/intro_back_color"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="16dp">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                font:customFont="Stratum2-Medium.otf"
+                android:text="MAY, 2015"
+                android:id="@+id/text_current_month"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btn_prev_cal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/left_arrow"/>
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btn_next_cal"
+                android:background="@drawable/right_arrow"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="SUN"
+                    android:id="@+id/textView90"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="MON"
+                    android:id="@+id/textView91"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="TUE"
+                    android:id="@+id/textView92"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="WED"
+                    android:id="@+id/textView93"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="THU"
+                    android:id="@+id/textView94"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="FRI"
+                    android:id="@+id/textView95"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#edc951"
+                    font:customFont="Stratum2-Regular.otf"
+                    android:text="SAT"
+                    android:id="@+id/textView96"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendar_grid"
+                android:numColumns="7"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

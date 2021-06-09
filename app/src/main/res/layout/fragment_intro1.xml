@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:background="#15a1b1"
+    tools:context="com.zenlabs.z5x5.Fragment.Intro1Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout"
+            android:background="#1a94a2">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="Welcome to the"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                font:customFont="Gotham-Book.ttf"
+                android:layout_marginTop="40dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="#87c440"
+                android:textSize="24sp"
+                android:text="5x5 Workout"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                font:customFont="Gotham-Bold.ttf"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:gravity="center_horizontal" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="by Zen Labs Fitness"
+                android:id="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView2"
+                font:customFont="Gotham-Book.ttf"
+                android:layout_marginTop="12dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_header"
+            android:scaleType="fitXY"/>
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="Getting started in weight training can be intimidating, but it shouldn&apos;t and it won&apos;t with Zen Labs Fitness.\nThere are many flavors of 3x5, 5x5, and other variations.\n\nAt the very core of the these lifting programs, they share the same proven elements. Results have been proven time and time again for the past decades since the original 5x5 by Mark Berry in the 1930s, Reg Park in the 1950s, Bill Starr in the 1970s, and the many versions you see today.\n\n5x5 Workout by Zen Labs Fitness includes the simplest versions to make getting started easy."
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            font:customFont="Gotham-Light.ttf"
+            android:gravity="top"
+            android:layout_marginTop="8dp"
+            android:layout_above="@+id/footrt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/intro_header_color"
+            android:id="@+id/footrt" />
+
+    </RelativeLayout>
+</FrameLayout>

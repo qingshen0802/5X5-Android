@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@xml/weekday_selector"
+        android:id="@+id/week_day_cell_container">
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Medium Text"
+            android:id="@+id/weekday_cell_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            font:customFont="Stratum2-Bold.otf"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weekday_cell_image"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_a"/>
+    </RelativeLayout>
+</RelativeLayout>

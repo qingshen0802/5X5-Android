@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/icon_user"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_unlock"
+            android:icon="@drawable/icon_unlock"
+            android:title="Unlock Premium" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icon_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_like_fb"
+            android:icon="@drawable/icon_facebook"
+            android:title="Like us on Facebook" />
+        <item
+            android:id="@+id/nav_follow_on_twitter"
+            android:icon="@drawable/icon_twitter"
+            android:title="Follow us on Twitter" />
+        <item
+            android:id="@+id/nav_follow_on_instagram"
+            android:icon="@drawable/icon_instagram"
+            android:title="Follow us on Instagram" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/icon_star"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_send_feedback"
+            android:icon="@drawable/icon_feedback"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/icon_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/icon_legal"
+            android:title="Legal Disclaimer" />
+        <item
+            android:id="@+id/nav_restore"
+            android:icon="@drawable/icon_restore"
+            android:title="Restore Purchases" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/icon_forum"
+            android:title="Forum" />
+    </group>
+</menu>

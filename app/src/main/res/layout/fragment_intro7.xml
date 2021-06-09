@@ -1,0 +1,474 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro_back_color"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zenlabs.z5x5.Fragment.Intro7Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/intro_header_color"
+            android:id="@+id/relativeLayout4">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Book.ttf"
+                android:text="Congratulations on"
+                android:id="@+id/textView19"
+                android:layout_marginTop="36dp"
+                android:layout_centerHorizontal="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Bold.ttf"
+                android:background="#87c440"
+                android:text=" Getting Started! "
+                android:id="@+id/textView20"
+                android:layout_below="@+id/textView19"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_alignRight="@+id/textView19"
+                android:layout_alignEnd="@+id/textView19"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/imageView4"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_header_flip"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/intro7_animator"
+            android:layout_alignBottom="@+id/intro7_animator">
+
+            <RelativeLayout
+                android:id="@+id/btn_3_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_5_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro7_animator"
+            android:layout_below="@+id/textView74"
+            android:layout_above="@+id/relative_container_0001"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/intro_header_color"
+            android:id="@+id/relativeLayout6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout6"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/relativeLayout7">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#87c440"
+                android:text="185 lb"
+                android:id="@+id/textView51"
+                android:layout_toLeftOf="@+id/textView71"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#87c440"
+                android:text="85 lb"
+                android:id="@+id/textView52"
+                android:layout_toLeftOf="@+id/textView71"
+                android:layout_below="@+id/textView51"
+                android:layout_alignLeft="@+id/textView51"
+                android:layout_alignStart="@+id/textView51"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#87c440"
+                android:text="135 lb"
+                android:id="@+id/textView53"
+                android:layout_toLeftOf="@+id/textView71"
+                android:layout_below="@+id/textView52"
+                android:layout_alignLeft="@+id/textView52"
+                android:layout_alignStart="@+id/textView52"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#87c440"
+                android:text="85 lb"
+                android:id="@+id/textView54"
+                android:layout_below="@+id/textView53"
+                android:layout_toRightOf="@+id/textView63"
+                android:layout_alignRight="@+id/textView53"
+                android:layout_alignEnd="@+id/textView53"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#87c440"
+                android:text="225 lb"
+                android:id="@+id/textView55"
+                android:layout_toLeftOf="@+id/textView71"
+                android:layout_alignLeft="@+id/textView54"
+                android:layout_alignStart="@+id/textView54"
+                android:gravity="center_horizontal"
+                android:layout_alignTop="@+id/textView65"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#cf3240"
+                android:text="275 lb"
+                android:id="@+id/textView56"
+                android:layout_toRightOf="@+id/textView71"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#cf3240"
+                android:text="145 lb"
+                android:id="@+id/textView57"
+                android:layout_toRightOf="@+id/textView71"
+                android:layout_below="@+id/textView56"
+                android:layout_alignRight="@+id/textView56"
+                android:layout_alignEnd="@+id/textView56"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#cf3240"
+                android:text="225 lb"
+                android:id="@+id/textView58"
+                android:layout_toRightOf="@+id/textView71"
+                android:layout_below="@+id/textView57"
+                android:layout_alignRight="@+id/textView57"
+                android:layout_alignEnd="@+id/textView57"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#cf3240"
+                android:text="155 lb"
+                android:id="@+id/textView59"
+                android:layout_below="@+id/textView58"
+                android:layout_toLeftOf="@+id/textView68"
+                android:layout_alignLeft="@+id/textView58"
+                android:layout_alignStart="@+id/textView58"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:background="#cf3240"
+                android:text="335 lb"
+                android:id="@+id/textView60"
+                android:layout_toRightOf="@+id/textView71"
+                android:layout_alignRight="@+id/textView59"
+                android:layout_alignEnd="@+id/textView59"
+                android:gravity="center_horizontal"
+                android:layout_alignTop="@+id/textView70"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:text="Squat"
+                android:id="@+id/textView61"
+                android:layout_toLeftOf="@+id/textView51"
+                android:layout_alignTop="@+id/textView51"
+                android:layout_marginRight="8dp"
+                android:layout_above="@+id/textView52"
+                android:gravity="center_vertical" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:text="Overhead Press"
+                android:id="@+id/textView62"
+                android:layout_toLeftOf="@+id/textView52"
+                android:layout_alignTop="@+id/textView52"
+                android:layout_marginRight="8dp"
+                android:layout_above="@+id/textView53"
+                android:gravity="center_vertical" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginRight="8dp"
+                android:text="Bench"
+                android:id="@+id/textView63"
+                android:layout_toLeftOf="@+id/textView53"
+                android:layout_alignTop="@+id/textView53"
+                android:layout_above="@+id/textView54"
+                android:gravity="center_vertical" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginRight="8dp"
+                android:text="Bent Over\nBarbell Row"
+                android:id="@+id/textView64"
+                android:layout_toLeftOf="@+id/textView54"
+                android:layout_alignTop="@+id/textView54"
+                android:gravity="right" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginRight="8dp"
+                android:text="Deadlift"
+                android:id="@+id/textView65"
+                android:layout_toLeftOf="@+id/textView55"
+                android:layout_below="@+id/textView64"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginLeft="8dp"
+                android:text="Squat"
+                android:id="@+id/textView66"
+                android:layout_toRightOf="@+id/textView56"
+                android:layout_alignTop="@+id/textView56"
+                android:layout_above="@+id/textView57"
+                android:gravity="center_vertical" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginLeft="8dp"
+                android:text="Overhead Press"
+                android:id="@+id/textView67"
+                android:layout_toRightOf="@+id/textView57"
+                android:layout_alignTop="@+id/textView57"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginLeft="8dp"
+                android:text="Bench"
+                android:id="@+id/textView68"
+                android:layout_toRightOf="@+id/textView58"
+                android:layout_alignTop="@+id/textView58"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginLeft="8dp"
+                android:text="Bent Over\nBarbell Row"
+                android:id="@+id/textView69"
+                android:layout_toRightOf="@+id/textView59"
+                android:layout_alignTop="@+id/textView59" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                font:customFont="Gotham-Light.ttf"
+                android:layout_marginLeft="8dp"
+                android:text="Deadlift"
+                android:id="@+id/textView70"
+                android:layout_toRightOf="@+id/textView60"
+                android:layout_below="@+id/textView69"
+                android:layout_marginTop="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView71"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout7"
+            android:layout_centerHorizontal="true"
+            android:background="#107a87"
+            android:gravity="center_horizontal"
+            android:id="@+id/relative_container_0001"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="STARTING WEIGHT:"
+                android:id="@+id/textView72"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="END OF 12 WEEKS:"
+                android:id="@+id/textView73"
+                android:layout_toRightOf="@+id/textView72"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            font:customFont="Gotham-Book.ttf"
+            android:text="We have calculated your personalized\nprogram. You have two options.\nSelect a program to get started:"
+            android:id="@+id/textView74"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+</FrameLayout>

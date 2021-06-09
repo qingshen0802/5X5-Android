@@ -1,0 +1,200 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TodayWorkoutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/intro_back_color"
+            android:id="@+id/linearLayout3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:background="#000000"
+            android:alpha="0.8"
+            android:id="@+id/relative_container_0001">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:text="Body Weight"
+                android:id="@+id/textView99"
+                android:layout_centerVertical="true"
+                font:customFont="Stratum2-Medium.otf"/>
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:text="150 lb"
+                android:id="@+id/text_body_weight"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_body_weight"
+                font:customFont="Stratum2-Medium.otf"
+                android:layout_marginRight="12dp" />
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/btn_body_weight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_gear_w"/>
+        </RelativeLayout>
+
+        <me.crosswall.lib.coverflow.core.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_above="@+id/today_workout_indicator"
+            android:alpha="0.8">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|center_horizontal">
+
+            </android.support.v4.view.ViewPager>
+
+        </me.crosswall.lib.coverflow.core.PagerContainer>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:layout_width="180dp"
+            android:layout_height="24dp"
+            android:id="@+id/today_workout_indicator"
+            android:layout_above="@+id/relative_container_0001"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:paddingTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/body_weight_container"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:visibility="invisible"
+            android:layout_above="@+id/relative_container_0001"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/relativeLayout10"
+                android:background="#17727b">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:text="Enter Body Weight"
+                    android:id="@+id/textView112"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    font:customFont="Stratum2-Medium.otf"/>
+
+                <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/check_icon"
+                    android:id="@+id/btn_body_weight_save"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="16dp" />
+
+                <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/btn_body_weight_cancel"
+                    android:background="@drawable/close_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayout10"
+                android:background="@android:color/black"
+                android:alpha="0.9">
+
+                <com.zenlabs.z5x5.CustomView.InfiniteScrollView
+                    android:id="@+id/small_number_picker"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    app:np_dividerColor="#00ffffff"
+                    app:np_max="99"
+                    app:np_min="0"
+                    app:np_focusable="false"
+                    app:np_textColor="@android:color/white"
+                    app:np_textSize="24sp"
+                    app:np_formatter="@string/small_number_picker_formatter"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true">
+                </com.zenlabs.z5x5.CustomView.InfiniteScrollView>
+
+                <com.zenlabs.z5x5.CustomView.InfiniteScrollView
+                    android:id="@+id/unit_picker"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    app:np_dividerColor="#00ffffff"
+                    app:np_max="1"
+                    app:np_min="0"
+                    app:np_focusable="false"
+                    app:np_textColor="@android:color/white"
+                    app:np_textSize="24sp"
+                    app:np_formatter="@string/small_number_picker_formatter"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/small_number_picker">
+                </com.zenlabs.z5x5.CustomView.InfiniteScrollView>
+
+                <com.zenlabs.z5x5.CustomView.InfiniteScrollView
+                    android:id="@+id/big_number_picker"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    app:np_dividerColor="#00ffffff"
+                    app:np_max="500"
+                    app:np_min="0"
+                    app:np_focusable="false"
+                    app:np_textColor="@android:color/white"
+                    app:np_textSize="24sp"
+                    app:np_formatter="@string/big_number_picker_formatter"
+                    android:layout_alignBaseline="@+id/small_number_picker"
+                    android:layout_alignBottom="@+id/small_number_picker"
+                    android:layout_toLeftOf="@+id/small_number_picker"
+                    android:layout_toStartOf="@+id/small_number_picker">
+                </com.zenlabs.z5x5.CustomView.InfiniteScrollView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

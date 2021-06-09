@@ -1,0 +1,315 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro_back_color"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zenlabs.z5x5.Fragment.Intro6Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/intro_header_color"
+            android:id="@+id/relativeLayout4">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Book.ttf"
+                android:text="Let's Calculate"
+                android:id="@+id/textView19"
+                android:layout_marginTop="36dp"
+                android:layout_centerHorizontal="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                font:customFont="Gotham-Bold.ttf"
+                android:background="#87c440"
+                android:text=" Your Program "
+                android:id="@+id/textView20"
+                android:layout_below="@+id/textView19"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/imageView4"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_header_flip"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/intro_header_color"
+            android:id="@+id/relativeLayout2" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            font:customFont="Gotham-Book.ttf"
+            android:text="How much can you lift for the\nfollowing exercises?"
+            android:id="@+id/textView22"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_i_dont_know"
+            android:layout_below="@+id/textView22"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_6_red_text"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/exercise_value_content_container"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_i_dont_know"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="5x185 lb"
+                    android:id="@+id/text_squat_value"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="Squat"
+                    android:id="@+id/textView42"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="Overhead Press"
+                    android:id="@+id/textView43"
+                    android:layout_centerVertical="true"/>
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="5x85 lb"
+                    android:id="@+id/text_over_value"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="Bench"
+                    android:id="@+id/textView45"
+                    android:layout_centerVertical="true"/>
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="5x135 lb"
+                    android:id="@+id/text_bench_value"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="Bent Over Barbell Row"
+                    android:id="@+id/textView47"
+                    android:layout_centerVertical="true"/>
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="5x85 lb"
+                    android:id="@+id/text_bench_over_value"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="Deadlift"
+                    android:id="@+id/textView49"
+                    android:layout_centerVertical="true"/>
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    font:customFont="Gotham-Book.ttf"
+                    android:text="1x225 lb"
+                    android:id="@+id/text_deadlift_value"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#084047"
+            android:id="@+id/exercise_weight_container"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible">
+
+            <com.zenlabs.z5x5.CustomView.InfiniteScrollView
+                android:id="@+id/exercise_unit_picker"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                app:np_dividerColor="#00ffffff"
+                app:np_max="1"
+                app:np_min="0"
+                app:np_focusable="false"
+                app:np_textColor="@android:color/white"
+                app:np_textSize="24sp"
+                app:np_formatter="@string/big_number_picker_formatter"
+                android:layout_alignParentTop="false"
+                android:layout_toRightOf="@+id/exercise_weight_picker">
+            </com.zenlabs.z5x5.CustomView.InfiniteScrollView>
+
+            <com.zenlabs.z5x5.CustomView.InfiniteScrollView
+                android:id="@+id/exercise_weight_picker"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                app:np_dividerColor="#00ffffff"
+                app:np_max="100"
+                app:np_min="1"
+                app:np_focusable="false"
+                app:np_textColor="@android:color/white"
+                app:np_textSize="24sp"
+                app:np_formatter="@string/big_number_picker_formatter"
+                android:layout_alignBaseline="@+id/exercise_unit_picker"
+                android:layout_alignBottom="@+id/exercise_unit_picker"
+                android:layout_centerHorizontal="true">
+            </com.zenlabs.z5x5.CustomView.InfiniteScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#107a87"
+            android:id="@+id/exercise_value_content_container"
+            android:visibility="invisible"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_above="@+id/exercise_weight_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="Squat"
+                android:id="@+id/text_selected_exercise"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/btn_save_exercise_value"
+                android:src="@drawable/check_icon"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

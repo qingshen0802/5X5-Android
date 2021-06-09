@@ -1,0 +1,260 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15a1b1"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zenlabs.z5x5.Fragment.Intro2Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a94a2"
+            android:paddingTop="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Bold.ttf"
+                    android:text="2 "
+                    android:id="@+id/textView5" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Light.ttf"
+                    android:text="Workouts"
+                    android:id="@+id/textView6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Bold.ttf"
+                    android:text="3 "
+                    android:id="@+id/textView7" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Light.ttf"
+                    android:text="Times a Week"
+                    android:id="@+id/textView8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Bold.ttf"
+                    android:text="45 Minutes "
+                    android:id="@+id/textView9" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Light.ttf"
+                    android:text="per Workout"
+                    android:id="@+id/textView10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Bold.ttf"
+                    android:text="8 "
+                    android:id="@+id/textView11" />
+
+                <com.zenlabs.z5x5.CustomView.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    font:customFont="Gotham-Light.ttf"
+                    android:text="Weeks"
+                    android:id="@+id/textView12" />
+            </LinearLayout>
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:background="#87c440"
+                font:customFont="Gotham-Bold.ttf"
+                android:text="GUARANTEED!"
+                android:id="@+id/textView13"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </LinearLayout>
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            font:customFont="Gotham-Light.ttf"
+            android:text="The program is broken down to only"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            font:customFont="Gotham-Light.ttf"
+            android:text="2 different workouts."
+            android:id="@+id/textView18"
+            android:layout_below="@+id/textView14"
+            android:layout_centerHorizontal="true" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            font:customFont="Gotham-Light.ttf"
+            android:text="*compound movement: Any exercise that engages two or\nmore different joints to fully stimulate multiple muscle groups."
+            android:id="@+id/textView15"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#1a94a2"
+            android:id="@+id/relativeLayout2" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            font:customFont="Gotham-Light.ttf"
+            android:text="All exercises are compound exercises* to\nmaximize efficiency, muscle/strength gain, and\nfat loss. Each day is a full body workout."
+            android:id="@+id/textView16"
+            android:layout_above="@+id/textView15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp" />
+
+        <com.zenlabs.z5x5.CustomView.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            font:customFont="Gotham-Light.ttf"
+            android:background="#17686b"
+            android:text="Your weekly schedule will alternate\nA,B,A and B,A,B"
+            android:id="@+id/textView17"
+            android:layout_above="@+id/textView16"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView17"
+            android:id="@+id/linearlayout1001"
+            android:layout_below="@+id/textView18">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/intro_2_a"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/intro_2_b"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.AppTheme.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="np_dividerColor" format="color" />
+        <attr name="np_formatter" format="string" />
+        <attr name="np_focusable" format="boolean" />
+        <attr name="np_max" format="integer" />
+        <attr name="np_min" format="integer" />
+        <attr name="np_textColor" format="color" />
+        <attr name="np_textSize" format="dimension" />
+        <attr name="np_typeface" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FontView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,255 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zenlabs.z5x5.Fragment.WorkoutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout8"
+            android:layout_centerHorizontal="true"
+            android:background="@color/intro_back_color"
+            android:id="@+id/relative_container_10022">
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                font:customFont="Stratum2-Medium.otf"
+                android:text="TODAY"
+                android:id="@+id/textView76"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/textView76"
+                android:background="@color/app_back_dark"
+                android:id="@+id/linear_container_10002">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="SQUAT"
+                        android:id="@+id/textView77"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:id="@+id/textView78"
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="OH PRESS"
+                        android:id="@+id/textView79"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:id="@+id/textView80"
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="DEADLIFT"
+                        android:id="@+id/textView81"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/intro_back_color"
+                android:layout_below="@+id/linear_container_10002">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="5x5"
+                        android:id="@+id/textView82"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="230 lb"
+                        android:id="@+id/textView83"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="5x5"
+                        android:id="@+id/textView84"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="95 lb"
+                        android:id="@+id/textView85"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="1x5"
+                        android:id="@+id/textView86"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.zenlabs.z5x5.CustomView.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        font:customFont="Stratum2-Medium.otf"
+                        android:text="315 lb"
+                        android:id="@+id/textView87"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/horizontal_list"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relative_container_10022"
+            android:padding="32dp">
+
+            <com.zenlabs.z5x5.CustomView.StartButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_start_workout"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <org.lucasr.twowayview.TwoWayView
+            android:id="@+id/horizontal_list"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            style="@style/TwoWayView"
+            android:background="#000000"
+            android:listSelector="@android:color/transparent"
+            android:alpha="0.8"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp">
+
+        </org.lucasr.twowayview.TwoWayView>
+    </RelativeLayout>
+</FrameLayout>

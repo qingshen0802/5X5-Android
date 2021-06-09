@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="396dp" >
+
+    <com.zenlabs.z5x5.CustomView.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        font:customFont="Stratum2-Bold.otf"
+        android:text="SQUAT WARMUP"
+        android:id="@+id/textView114"
+        android:padding="8dp"
+        android:background="@xml/rounded_red_top_view"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="64dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView114"
+        android:background="#000000"
+        android:id="@+id/linearLayout5"
+        android:layout_above="@+id/btn_back_today_workout"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@xml/circle_button"
+                android:id="@+id/button9"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="5x45 lb Empty Bar"
+                android:id="@+id/textView101"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button9"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@xml/circle_button"
+                android:id="@+id/button20"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="5x45 lb Empty Bar"
+                android:id="@+id/textView121"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button20"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@xml/circle_button"
+                android:id="@+id/button21"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="5x45 lb Empty Bar"
+                android:id="@+id/textView122"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button21"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@xml/circle_button"
+                android:id="@+id/button22"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="5x45 lb Empty Bar"
+                android:id="@+id/textView123"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button22"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@xml/circle_button"
+                android:id="@+id/button23"
+                android:layout_centerVertical="true" />
+
+            <com.zenlabs.z5x5.CustomView.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                font:customFont="Stratum2-Bold.otf"
+                android:text="5x45 lb Empty Bar"
+                android:id="@+id/textView124"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button23"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5x5 230 lb 92.5 lb / side"
+        android:id="@+id/btn_back_today_workout"
+        android:drawableLeft="@drawable/red_arrow_back"
+        android:drawablePadding="8dp"
+        android:background="@xml/rounded_red_bottom_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:paddingLeft="8dp"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

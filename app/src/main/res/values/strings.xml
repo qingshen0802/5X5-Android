@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">5X5</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigatoin">NavigatoinActivity</string>
+
+    <string name="big_number_picker_formatter">%2d</string>
+    <string name="small_number_picker_formatter">%02d</string>
+
+    <string name="help_description">Form is the most important for each and every workout. Quality over quantity. Proper form will prevent injury and allow you to lift long term.\nBad form will lead you to injury, prevent progress, and possibly prevent you from lifting at all.\nGood luck!</string>
+
+    <string name="email_app">contactus@zenlabsfitness.com</string>
+    <string name="app_feedback">App Feedback</string>
+
+    <string name="feedback_app_name">AppName: 5x5 by Zen Labs Fitness</string>
+    <string name="app_version">App Version:</string>
+    <string name="device_model">Device Model:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="send_email">Send Email</string>
+
+    <string name="share_text">Hey! check out the newest 5x5 app.  \nhttp://play.google.com/store/apps/details?id=com.zenlabs.sleepsounds \nYou can also check out their awesome community here: \nhttp://www.facebook.com/zenlabsfitness \nhttp://twitter.com/zenlabsfitness \nhttp://instagram.com/zenlabsfitness \nhttp://forums.zenlabsfitness.com</string>
+    <string name="share_subject">Check out the new 5x5 app!</string>
+</resources>
